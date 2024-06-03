@@ -224,7 +224,7 @@ export default function Dashboard() {
 
         const ID = response.data.quizDataModel._id;
         setID(ID);
-        const shareLink = `http://localhost:5173/play/${response.data.quizDataModel.link}`;
+        const shareLink = `https://main--quizaprg.netlify.app/play/${response.data.quizDataModel.link}`;
         setQuizLink(shareLink);
         setModalStep(2);
       } catch (error) {
