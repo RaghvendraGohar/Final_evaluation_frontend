@@ -1,0 +1,60 @@
+.quizTableContainer {
+  padding: 20px;
+  overflow: auto;
+  
+}
+
+.quizTableTitle {
+  text-align: center;
+  color: #5076ff;
+}
+
+.quizTable {
+  width: 100%;
+  /* border-collapse: collapse; */
+}
+
+.quizTable th {
+  background-color: #5076ff;
+  color: white;
+  padding: 10px;
+  width: 10px;
+}
+
+.evenRow {
+  background-color: #ededed;
+}
+
+.oddRow {
+  background-color: #b3c4ff;
+}
+
+.actionButton {
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.actionButton img {
+  width: 16px !important; /* Adjust the size as needed */
+  height: 16px !important; /* Adjust the size as needed */
+}
+.quizTable th,
+.quizTable td {
+  text-align: center;
+  height: 10px !important; /* Set row height */
+  border: none;
+}
+.quizTable th {
+  background-color: #5076ff;
+  color: white;
+  width: 5% !important; /* Adjust column width if needed */
+}
+.quizTable td {
+  width: 5% !important; /* Adjust column width if needed */
+}
+.actionButton img {
+  width: 10px !important; /* Adjust the size as needed */
+  height: 10px !important; /* Adjust the size as needed */
+}

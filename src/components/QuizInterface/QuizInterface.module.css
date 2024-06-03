@@ -1,0 +1,206 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+.quizInterface {
+  display: flex;
+  height: 100vh;
+  background-color: #041325;
+  justify-content: center;
+}
+.quizContainer {
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0px 0px 30px 0px #00000026;
+  height: 76.09%;
+  width: 83.28%;
+  margin-top: 6%;
+}
+
+.quizHeader {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.quizCount {
+  font-family: "Poppins", sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 60px;
+  margin-left: 4.97%;
+  margin-top: 2.97%;
+  color: #474444;
+}
+.quizQuestion {
+  font-family: "Poppins", sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 60px;
+  color: #474444;
+  margin-left: 3.28%;
+}
+
+.optionsContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 14%;
+  grid-row-gap: 33.66%;
+  margin-top: 2.64%;
+  width: 74.1%;
+  margin-left: 12.94%;
+}
+
+.option {
+  background-color: #f0f0f0;
+  padding: 0px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  color: #000000;
+  font-family: "Poppins", sans-serif;
+  font-size: 35px;
+  font-weight: 600;
+  line-height: 52.5px;
+  text-align: center;
+  width: 58.5%;
+  height: 100%;
+  flex-wrap: nowrap;
+}
+
+.option img {
+  max-height: 50px;
+}
+
+.text {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.image {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.option span,
+.option img {
+  flex-basis: 100%;
+}
+
+.option span + img,
+.option img + span {
+  flex-basis: 50%;
+}
+
+.selectedOption {
+  background-color: #d0f0d0; /* Highlight color for selected option */
+  border: 2px solid #4caf50; /* Border for selected option */
+}
+
+.congratsPage {
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0px 0px 30px 0px #00000026;
+  height: 76.09%;
+  width: 83.28%;
+  margin-top: 6%;
+}
+
+/* button {
+    background-color: #60B84B;
+    color: white;
+    padding: 0px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 30%;
+    height: 8.7%;
+    margin-top: 6.53%;
+    margin-left: 36.49%;
+  } */
+
+.nextButton {
+  background-color: #60b84b;
+  color: white;
+  padding: 0px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  width: 30%;
+  height: 8.7%;
+  margin-top: 6.53%;
+  margin-left: 36.49%;
+}
+
+.submitButton {
+  background-color: #60b84b;
+  color: white;
+  padding: 0px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  width: 30%;
+  height: 8.7%;
+  margin-top: 6.53%;
+  margin-left: 36.49%;
+}
+
+.pollH {
+  font-family: "Poppins", sans-serif;
+  font-size: 74px;
+  font-weight: 700;
+  line-height: 111px;
+  text-align: center;
+  width: 77.29%;
+  margin-left: 12.19%;
+  margin-top: 10%;
+}
+
+.timer{
+    font-family: "Poppins", sans-serif;
+    font-size: 40px;
+font-weight: 700;
+line-height: 60px;
+text-align: left;
+color: #D60000;
+margin-right: 3.37%;
+
+}
+.qAH{
+    font-family: "Poppins", sans-serif;
+font-size: 40px;
+font-weight: 700;
+line-height: 60px;
+text-align: center;
+margin-top: 4.99%;
+
+}
+
+.qAP{
+    font-family: "Poppins", sans-serif;
+font-size: 40px;
+font-weight: 700;
+line-height: 60px;
+text-align: center;
+
+}
+.qAPs{
+    font-family: "Poppins", sans-serif;
+font-size: 40px;
+font-weight: 700;
+line-height: 60px;
+text-align: center;
+color: #60B84B;
+margin-left: 13px;
+}
+.image2{
+    text-align: center;
+    width: 30%;
+    height: 50.23%;
+    margin-left:36% ;
+}

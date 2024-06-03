@@ -1,0 +1,685 @@
+.dashboard {
+  display: flex;
+  height: 100vh;
+  
+}
+
+.sidebar {
+  width: 15%;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
+  box-shadow: 0px 4px 4px 0px #00000040;
+  background: #ffffff;
+}
+
+.sidebarHeading {
+  font-size: 70px;
+  font-weight: 400;
+  text-align: center;
+  line-height: 70px;
+  font-family: "Jomhuria", sans-serif;
+  color: #474444;
+}
+
+.options {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.option {
+  margin: 10px 0;
+  padding: 10px;
+  text-align: center;
+  cursor: pointer;
+  color: #474444;
+  border-radius: 5px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 30px;
+  transition: box-shadow 0.3s ease;
+}
+
+.option.active {
+  box-shadow: 0px 4px 4px 0px #00000040;
+}
+
+.logout {
+  color: #474444;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-family: "Poppins", sans-serif;
+  width: 83px;
+  height: 30px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.mainContent {
+  flex-grow: 1;
+  padding: 20px;
+  background-color: #f2f2f2;
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  justify-content: center;
+  overflow: auto;
+}
+
+.scorecards {
+  display: flex;
+  justify-content: space-between;
+  width: 72.2%;
+  top: 15%;
+  position: absolute;
+  height: 18%;
+}
+
+.scorecard {
+  height: 73.6%;
+  width: 295px;
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  margin: 15px;
+}
+
+.scorecard h2 {
+  font-size: 36px;
+  margin: 0;
+}
+
+.scorecard p {
+  font-size: 18px;
+  color: #474444;
+  margin: 0;
+}
+
+.trendingHeading {
+  position: absolute;
+  top: 45.1%;
+  left: 23.4%;
+  width: 265px;
+  height: 53px;
+  font-family: "Poppins", sans-serif;
+  color: #474444;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 52.5px;
+}
+.trendingQuizzes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  top: 55.64%;
+  left: 24.4%;
+  position: absolute;
+}
+
+.quizItem {
+  width: 217px;
+  height: 62px;
+  background: #ffffff;
+  padding: 3px;
+  border-radius: 5px;
+  text-align: center;
+  box-sizing: border-box;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.quizItem div {
+  /* margin: 2px 0; */
+  padding: 0px;
+}
+.topRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.quizName {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  width: 65px;
+  height: 35px;
+  align-self: flex-start;
+}
+
+.impression {
+  align-self: flex-end;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 15px;
+  width: 28px;
+  height: 35px;
+  color: #ff5d01;
+}
+
+.createdAt {
+  align-self: baseline; /* Ensures createdAt is at the bottom */
+  font-family: "Poppins", sans-serif;
+  color: #60b84b;
+  font-weight: 600;
+  font-size: 11px;
+  width: 155px;
+  margin-bottom: 15px !important;
+}
+
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Modal Step 1 Styles */
+.modalStep1 {
+  background: white; /* Change to white background */
+  padding: 20px;
+  border-radius: 10px;
+  width: 66%;
+  height: 50.72%;
+  position: absolute;
+  top: 31.97%;
+  left: 17.03%;
+  box-shadow: 0px 0px 25px 0px #00000026;
+}
+
+.modalStep1 .modalHeader {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.modalStep1 .input1 {
+  width: 79.64% !important;
+  padding-left: 20px;
+  height: 23.2%;
+  top: 98px;
+  left: 10.1%;
+  border-radius: 10px;
+  position: absolute;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 37.5px;
+  border: none;
+  box-shadow: 0px 0px 25px 0px #00000026;
+  color: #9F9F9F;
+
+}
+
+.modalStep1 .quizTypeContainer {
+  display: flex;
+  justify-content: space-between;
+  /* margin-bottom: 20px; */
+  width: 76.68%;
+  font-family: "Poppins", sans-serif;
+  color: #9f9f9f;
+  left: 11.59%;
+  position: absolute;
+  top: 47.39%;
+  margin-top: 2.97%;
+  height: 11.13%;
+  font-size: 25px;
+  font-weight: 500;
+  line-height: 37.5px;
+}
+
+.modalStep1 .quizTypeButton {
+  padding: 0px;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 171px;
+  box-shadow: 0px 0px 25px 0px #00000026;
+  color: #9f9f9f;
+  font-family: "Poppins", sans-serif;
+}
+
+.modalStep1 .selectedOption {
+  background-color: #60b84b;
+  color: white;
+}
+
+.modalStep1 .modalButtons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.modalStep1 .cancelButton {
+  color: #474444;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 0px 0px 15px 0px #00000040;
+  position: absolute;
+  top: 72.2%;
+  left: 11.47%;
+  padding: 0;
+  width: 33%;
+  height: 10.9%;
+}
+
+.modalStep1 .continueButton {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  position: absolute;
+  padding: 0;
+  width: 33%;
+  height: 10.9%;
+  left: 55.14%;
+  top: 72.2%;
+}
+
+/* Modal Step 2 Styles */
+.modalStep2 {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  overflow-y: auto;
+  /* max-width: 66%; */
+  width: 66.01%;
+  height: 80.64%;
+  left: 17.03%;
+  top: 9.97%;
+  position: absolute;
+}
+.modalStep2 .modalHeader {
+  margin-bottom: 20px;
+}
+
+.modalStep2 .questionIndicators {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin-left: 7.34%;
+  position: absolute;
+  top: 6.4%;
+}
+
+.modalStep2 .questionIndicator {
+  background: #ffffff;
+  border-radius: 50%;
+  width: 58px;
+  height: 58px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0px 0px 10px 0px #00000026;
+  position: relative;
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 30px;
+  color: #9F9F9F;
+
+}
+
+.modalStep2 .addQuestion {
+  background: none;
+  border: none;
+  color: #969696;
+  cursor: pointer;
+  margin-left: 10px;
+  width: 35px;
+  
+}
+.removeQuestion {
+  background: transparent;
+  width: 15px;
+  height: 15px;
+  top: 0;
+  right: 0;
+  position: absolute;
+}
+
+.modalStep2 .maxQuestions {
+  color: #9f9f9f;
+  font-family: "Poppins", sans-serif;
+  position: absolute;
+  top: 8.49%;
+  left: 71.47%;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 30px;
+}
+
+.modalStep2 .questionContainer {
+  margin-bottom: 20px;
+}
+
+.modalStep2 .questionContainer .inputq {
+  border-radius: 10px;
+  box-shadow: 0px 0px 25px 0px #00000026;
+  width: 75.64%;
+  height: 7.45%;
+  top: 20.78%;
+  /* left: 36.80%; */
+  position: absolute;
+  margin-left: 7.34%;
+  font-family: "Poppins", sans-serif;
+  padding-left: 18px;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 30px;
+  border: none;
+  color: #9F9F9F;
+
+
+}
+
+.optionTypeP {
+  top: 35.81%;
+  position: absolute;
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 30px;
+  color: #9f9f9f;
+  margin-left: 9.25%;
+}
+.radioText1 {
+  width: 71px;
+  height: 30px;
+  top: 35.81%;
+  position: absolute;
+  margin-left: 33.37%;
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 30px;
+  color: #9f9f9f;
+}
+.radioText2 {
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 30px;
+  color: #9f9f9f;
+  top: 35.81%;
+  margin-left: 44.85%;
+  position: absolute;
+}
+.radioText3 {
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 30px;
+  color: #9f9f9f;
+  top: 35.81%;
+  position: absolute;
+  margin-left: 64.02%;
+}
+.radioTextI {
+  height: 19px;
+  width: 19px;
+  accent-color: black;
+  /* border-color:#D9D9D9 !important ; */
+  background-color: #d9d9d9;
+}
+
+.modalStep2 .optionTypeContainer {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  width: 74.64%;
+}
+
+.modalStep2 .optionContainer {
+  display: flex;
+  flex-direction: column;
+  margin-left: 13.25%;
+  top: 41.4%;
+  position: absolute;
+  margin-top: 15px;
+  margin-left: 7.34%;
+}
+
+.modalStep2 .optionItem {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.modalStep2 .textImageOption {
+  display: flex;
+  gap: 15px;
+}
+
+.modalStep2 .removeOption {
+  background: none;
+  border: none;
+  color: #D60000;
+  cursor: pointer;
+  margin-left: 27.85px;
+  width:13.83px;
+  height:18px;
+}
+
+.optionContainerInput1{
+  box-shadow: 0px 0px 25px 0px #00000026;
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 30px;
+  color: #9F9F9F;  
+  width:390px;
+  height:50px;
+  border-radius: 10px;
+  border: none;
+  padding-left: 18px;
+}
+
+.optionContainerInput2{
+  box-shadow: 0px 0px 25px 0px #00000026;
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 30px;
+  color: #9F9F9F;  
+  border: none;
+  padding-left: 18px;
+  border-radius: 10px;
+  height:50px;
+  width: 248px;
+
+}
+.optionContainerInput3{
+  box-shadow: 0px 0px 25px 0px #00000026;
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 30px;
+  color: #9F9F9F;  
+  border: none;
+  padding-left: 18px;
+  border-radius: 10px;
+  height:50px;
+  width: 313px;
+
+}
+
+.modalStep2 .addOption {
+  border: none;
+  color: #9f9f9f;
+  cursor: pointer;
+  margin-top: 8px;
+  box-shadow: 0px 0px 15px 0px #00000040;
+  border-radius: 10px;
+  width: 408px;
+  height: 50px;
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 30px;
+}
+
+/* .modalStep2 .modalButtons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+} */
+
+.timer {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 54.39%;
+  left: 75.8%;
+  align-items: center;
+  gap: 10px;
+}
+.timerP {
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 30px;
+  color: #9F9F9F;
+}
+.timerb {
+  box-shadow: 0px 0px 15px 0px #00000026;
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 22.5px;
+  color: #9F9F9F;
+  width: 95px;
+  height: 34px;
+  border-radius: 10px;
+}
+.timerb.active {
+  background-color: #D60000;
+  color: #FFFFFF;
+}
+
+.modalStep2 .cancelButton2 {
+  cursor: pointer;
+  box-shadow: 0px 0px 15px 0px #00000040;
+  position: absolute;
+  top: 86.3%;
+  padding: 0;
+  width: 37%;
+  height: 6.87%;
+  position: absolute;
+  margin-left: 7.34%;
+  color: #474444;
+  font-family: "Poppins", sans-serif;
+  font-size: 21px;
+  font-weight: 600;
+  line-height: 31.5px;
+}
+
+.modalStep2 .continueButton2 {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  position: absolute;
+  top: 86.3%;
+  padding: 0;
+  width: 33%;
+  height: 6.87%;
+  margin-left: 51.79%;
+  font-family: "Poppins", sans-serif;
+  font-size: 21px;
+  font-weight: 600;
+  line-height: 31.5px;
+}
+
+/* Modal Step 3 Styles */
+.modalStep3 {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  /* max-width: 66%; */
+  width: 66.01%;
+  height: 57.81%;
+  left: 19.03%;
+  top: 21.15%;
+  position: absolute;
+}
+
+.modalStep3 .modalHeader {
+  font-family: "Poppins", sans-serif;
+font-size: 39px;
+font-weight: 600;
+line-height: 58.5px;
+text-align: center;
+width: 42%;
+position: absolute;
+left: 29.31%;
+top: 20.99%;
+}
+
+.modalStep3Close{
+  background: transparent;
+  left: 94.23%;
+  position: absolute;
+  width: 0px;
+  
+}
+
+.modalStep3 .input {
+  position: absolute;
+  width: 79.88%;
+  left: 13.01%;
+  top: 53.22%;
+  border-radius: 10px;
+  border: none;
+  background-color: #EDEDED;
+  font-family: "Poppins", sans-serif;
+font-size: 25px;
+font-weight: 600;
+line-height: 37.5px;
+height:12.47%;
+padding-left: 31px;
+}
+
+.modalStep3 .modalButtons {
+  display: flex;
+  justify-content: center;
+}
+
+.modalStep3 .shareButton {
+  background-color: #60B84B;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  padding: 0px;
+  top: 74.84%;
+  position: absolute;
+  font-family: "Poppins", sans-serif;
+font-size: 21px;
+font-weight: 600;
+line-height: 31.5px;
+width:279px;
+height:46.14px;
+
+}
