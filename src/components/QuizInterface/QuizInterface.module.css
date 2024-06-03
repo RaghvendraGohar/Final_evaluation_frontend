@@ -1,13 +1,15 @@
 * {
-  padding: 0px;
-  margin: 0px;
+  padding: 0;
+  margin: 0;
 }
+
 .quizInterface {
   display: flex;
   height: 100vh;
   background-color: #041325;
   justify-content: center;
 }
+
 .quizContainer {
   background-color: #ffffff;
   border-radius: 10px;
@@ -22,6 +24,7 @@
   justify-content: space-between;
   margin-bottom: 20px;
 }
+
 .quizCount {
   font-family: "Poppins", sans-serif;
   font-size: 40px;
@@ -31,6 +34,7 @@
   margin-top: 2.97%;
   color: #474444;
 }
+
 .quizQuestion {
   font-family: "Poppins", sans-serif;
   font-size: 40px;
@@ -98,8 +102,8 @@
 }
 
 .selectedOption {
-  background-color: #d0f0d0; /* Highlight color for selected option */
-  border: 2px solid #4caf50; /* Border for selected option */
+  background-color: #d0f0d0;
+  border: 2px solid #4caf50;
 }
 
 .congratsPage {
@@ -110,19 +114,6 @@
   width: 83.28%;
   margin-top: 6%;
 }
-
-/* button {
-    background-color: #60B84B;
-    color: white;
-    padding: 0px;
-    border: none;
-    border-radius: 10px;
-    cursor: pointer;
-    width: 30%;
-    height: 8.7%;
-    margin-top: 6.53%;
-    margin-left: 36.49%;
-  } */
 
 .nextButton {
   background-color: #60b84b;
@@ -161,46 +152,94 @@
   margin-top: 10%;
 }
 
-.timer{
-    font-family: "Poppins", sans-serif;
-    font-size: 40px;
-font-weight: 700;
-line-height: 60px;
-text-align: left;
-color: #D60000;
-margin-right: 3.37%;
-
-}
-.qAH{
-    font-family: "Poppins", sans-serif;
-font-size: 40px;
-font-weight: 700;
-line-height: 60px;
-text-align: center;
-margin-top: 4.99%;
-
+.timer {
+  font-family: "Poppins", sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 60px;
+  text-align: left;
+  color: #d60000;
+  margin-right: 3.37%;
 }
 
-.qAP{
-    font-family: "Poppins", sans-serif;
-font-size: 40px;
-font-weight: 700;
-line-height: 60px;
-text-align: center;
+.qAH {
+  font-family: "Poppins", sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 60px;
+  text-align: center;
+  margin-top: 4.99%;
+}
 
+.qAP {
+  font-family: "Poppins", sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 60px;
+  text-align: center;
 }
-.qAPs{
-    font-family: "Poppins", sans-serif;
-font-size: 40px;
-font-weight: 700;
-line-height: 60px;
-text-align: center;
-color: #60B84B;
-margin-left: 13px;
+
+.qAPs {
+  font-family: "Poppins", sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 60px;
+  text-align: center;
+  color: #60b84b;
+  margin-left: 13px;
 }
-.image2{
-    text-align: center;
-    width: 30%;
-    height: 50.23%;
-    margin-left:36% ;
+
+.image2 {
+  text-align: center;
+  width: 30%;
+  height: 50.23%;
+  margin-left: 36%;
+}
+
+@media (max-width: 768px) {
+  .quizContainer {
+    width: 90%;
+    margin-top: 5%;
+  }
+
+  .quizCount, .quizQuestion, .timer {
+    font-size: 24px;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+  .optionsContainer {
+    grid-template-columns: 1fr;
+    grid-row-gap: 20%;
+    margin-left: 5%;
+    width: 90%;
+  }
+
+  .option {
+    font-size: 20px;
+    width: 90%;
+    margin-left: 5%;
+  }
+
+  .nextButton, .submitButton {
+    width: 80%;
+    margin-left: 10%;
+  }
+
+  .pollH {
+    font-size: 36px;
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 10%;
+  }
+
+  .qAH, .qAP, .qAPs {
+    font-size: 24px;
+  }
+
+  .image2 {
+    width: 60%;
+    height: auto;
+    margin-left: 20%;
+  }
 }
